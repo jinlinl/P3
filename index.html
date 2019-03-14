@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P03 - Portfolio Style Guide Template</title>
+
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+   
+	<nav>
+       <a href = "contact.html">contact me</a>
+       <a href = "projects.html">my work</a>
+	   <a href = "about.html">about</a>
+	 </nav>
+	 <h1>P03 - Portfolio Style Guide Template</h1>
+	
+
+    <section id="element_section">
+      <h2>Interactive Elements</h2>
+
+     <section class="element"> <!-- ONE SECTION -->
+	  <h3>In-text Link</h3>
+
+	   <h4>CSS selector:</h4>
+        <p>a</p>
+
+		<h4>Sample code:</h4>
+        <code>&lt;a href="#link"&lt;This&lt;/a&gt; is what an in-text link will look like.&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+		<p><a href="#link">This</a> is what an in-text link will look like.</p>
+	 </section> <!-- ONE SECTION -->
+
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+      </section> <!-- ONE SECTION -->
+
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Submit/Reset Buttons</h3> <!--information obtained from https://www.w3schools.com/html/html_forms.asp -->
+		<h4>CSS selector:</h4>
+        <p>input[type=submit], input[type=reset]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="submit" value="Submit"&gt;</code>
+
+        <h4>Rendered element:</h4>
+		 <input type="submit" value="Submit">
+		 <input type="reset" value="Reset">
+      </section> <!-- ONE SECTION -->
+
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Text Input Field with Label</h3>
+		<h4>CSS selector:</h4>
+        <p>input[type=text]</p>
+
+        <h4>Sample code:</h4>
+		<code>&lt;form&gt;1:&lt;br&gt;&lt;input type="text" name="1"&gt;&lt;br&gt;&lt;/form&gt;</code>
+
+        <h4>Rendered element:</h4>
+		<form> <!--information obtained from https://www.w3schools.com/html/html_forms.asp -->
+		 1:<br><input type="text" name="1"><br>
+		 2:<br><input type="text" name="2">
+		</form>
+      </section> <!-- ONE SECTION -->
+
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Image as a Link</h3>  
+		<h4>CSS selector:</h4>
+		<p>img</p>
+
+		 <h4>Sample code:</h4>
+		 <code> &lt;a href="#link"&gt; &lt;img id="chanel" src="img/logo.jpg" alt="chanel logo"&gt;&lt;/a&gt; </code>
+		 
+		 <h4>Rendered element:</h4>
+		 <a href="#link"> <img id="chanel" src="img/logo.jpg" alt="chanel logo"></a>
+      </section> <!-- ONE SECTION -->
+
+
+    </section>
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="element_section">
+      <h2>Text Elements</h2>
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Headings</h3> 
+		<h4>CSS selector:</h4>
+		<p>h[#]</p>
+
+		 <h4>Sample code:</h4>
+		 <code> &lt;h4&gt;Heading 1&lt;/h4&gt; </code>
+
+		 <h4>Rendered element:</h4>
+		<h4>Heading 1: Section heading</h4>
+		<h5>Heading 2: subsection heading</h5>
+		<h6>Heading 3: extra heading 1</h6>
+
+      </section> <!-- ONE SECTION -->
+
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Paragraphs</h3> 
+		<h4>CSS selector:</h4>
+		<p>p</p>
+
+		 <h4>Sample code:</h4>
+		 <code> &lt;p4&gt;Lorem ipsum&lt;/p4&gt; </code>
+
+		 <h4>Rendered element:</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet felis quis rhoncus congue. Suspendisse aliquet, odio ac feugiat tempus.</p>
+      </section> <!-- ONE SECTION -->
+
+    </section>
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="element_section">
+      <h2>Combined Elements</h2>
+
+      <section class="element">  <!-- Learned from IAT 235 -->
+        <h3>Main Navigation</h3> <!-- ONE SECTION -->
+		<h4>CSS selector:</h4>
+		<p>nav</p>
+
+		 <h4>Sample code:</h4>
+		 <code> 
+		 &lt;nav class="grid"&gt;
+		 &lt;div class="grid-col-1of3"&gt;
+         &lt;a href = "home.html"&gt;Home&lt;/a&gt;
+         &lt;/div&gt;
+		 &lt;/nav&gt;
+		 </code>
+
+		 <h4>Rendered element:</h4>
+		<nav class="grid">
+		 <div class="grid-col-1of5">
+          <a href = "home.html">Home</a>
+         </div>
+
+        <div class="grid-col-1of5">
+          <a href = "projects.html">My Work</a>
+        </div>
+
+        <div class="grid-col-1of5">
+         <a href = "contact.html">Contact Me</a>
+        </div>
+	   </nav>
+		
+      </section>  <!-- ONE SECTION -->
+
+
+      <section class="element_section">  <!-- ONE SECTION -->
+        <h3>Product/Service Listing</h3> <!-- change to work listing-->
+		<h4>CSS selector:</h4>
+		<p>View heading, image, and link.</p>
+
+		 <h4>Sample code:</h4>
+		 <p>View heading, image, and link.</p>
+
+		 <h4>Rendered element:</h4>
+		<h4> Chance Eau De Parfum Chanel </h4>
+		<img id="perfume3" src="img/perfume3.jpg" alt="perfume3">
+		<h5> 170.00 CAD </h5>
+		<a href = "details.html"> more details </a>
+      </section>  <!-- ONE SECTION -->
+
+    </section>
+
+
+  <!-- BRAND COMPONENTS SECTION // -->
+    <section id="element_section">
+      <h2>Brand Components</h2>
+
+	 <section class="element"> <!-- ONE SECTION -->
+	  <h3>Font</h3>
+	  <h4>CSS selector:</h4>
+	  <p> p </p>
+
+		 <h4>Sample code:</h4>
+		 <code> </code>
+
+		 <h4>Rendered element:</h4>
+		<div class="arial">
+          <p> Arial </p>
+        </div>
+
+		<div class="helvetica">
+          <p> Helvetica </p>
+        </div>
+
+		<div class="verdana">
+          <p> Verdana </p>
+        </div>
+
+		<div class="tahoma">
+          <p> Tahoma </p>
+        </div>
+      </section> <!-- ONE SECTION -->
+
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Color Palette</h3>
+		<img id="colorpalette" src="img/colorpalette.png" alt="colorpalette">
+
+		<p> Color of link and button regular and hover states. </p>
+		<img id="hoverpalette" src="img/hoverpalette.png" alt="hoverpalette">
+      </section> <!-- ONE SECTION -->
+
+
+      <section class="element"> <!-- ONE SECTION -->
+        <h3>Imagery and Mood Board </h3>
+
+			<img src="img/mag_1.png" alt="Magazine spread" style="width: 100%">
+			<img src="img/vitra2_1.jpg" alt="Vitra version 2" style="width: 100%">
+			<img src="img/seattle_1.png" alt="Seattle slide deck" style="width: 100%">
+			<img src="img/final_1.png" alt="Final slide deck" style="width: 100%">
+
+      </section> <!-- ONE SECTION -->
+
+    </section>
+
+	
+    <section id="element_section"> <!-- ONE SECTION -->
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Adams, Vernon; Bailly, Jacques. Designer. 2011. <strong>Nunito Sans [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Nunito+Sans">https://fonts.google.com/specimen/Nunito+Sans</a></li>
+        <li>Chanel. Creator. n.d. <strong>Brand Images [Image]</strong>. Retrieved from <a href="https://www.chanel.com/en_CA/fragrance-beauty/fragrance.html">https://www.chanel.com/en_CA/fragrance-beauty/fragrance.html</a>.</li>
+      </ul>
+
+    </section> <!-- ONE SECTION -->
+
+</body>
+</html>
