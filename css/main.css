@@ -1,4 +1,45 @@
 /*
+HEADER NAVIGATION BAR ----------------------
+*/
+
+header {
+  margin: 0;
+  padding: 3rem;
+  
+}
+
+nav {
+  overflow: hidden;
+  text-weight: bold;
+  
+}
+
+nav a {
+  font-size: 0.9rem;
+	text-decoration: none;
+  text-align: center;
+  float:right;
+  width: 10%;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+nav h5 {
+  float:left;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav a:hover, a:active, a:focus {
+	color: #EFB2AA;
+	transition-property: color; 
+	transition-duration: 0.5s;
+}
+
+/*
   PAGE STYLING--------------------------
 */
 *, *::after, *::before {
@@ -12,34 +53,40 @@
 	height: 100%;
 }
 
-
-#element_section {
-  background-color: yellow;
-  margin: 5rem;
-}
-
-.element {
-  padding: 2rem;
-}
-
 .grid-blocks {
-  padding: 2rem;
-  background-color: blue;
-  width: 50%;
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  
+}
+
+.grid-blocks img:hover {
+	transition-property: opacity; 
+	transition-duration: 0.8s;
+	opacity: 0.8;
 }
 
 .block {
-  width: 50%;
+  display: inline-block;
+  width: 45%;
+  /* background-color: red; */
+  margin: 0 auto;
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .container {
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
-  width:100%;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: row;
+  /* background-color: green; */
+}
+
+.center-block {
+  margin: 2rem;
 }
 
 /*
@@ -47,15 +94,11 @@
 */
 
 img {
-	height: auto; 
-	max-width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid grey;
 }
 
-img:hover {
-	transition-property: opacity; 
-	transition-duration: 0.5s;
-	opacity: 0.5;
-}
 
 a {
   font-size: 0.7rem;
@@ -77,43 +120,46 @@ a:hover, a:focus {
 
 body {
   font-family: 'Helvetica', sans-serif;
-  padding: 2rem;
+  /* background-color: yellow; */
+  margin: 0;
 }
 
 h1 {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
   text-align: center;
   font-size: 2rem;
   margin: 0;
-  background-color: #353842;
+  /*background-color: #353842 */
 }
 
 h2 {
   padding: 2rem;
   text-align: center;
   font-size: 1.75rem;
-  background-color: red;
+  /*background-color: red;*/
   margin: 0;
 }
 
 h3 {
   font-style: italic;
   font-size: 1.25rem;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 h5 {
   font-size: 1rem;
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
-  margin:0;
+  
 }
 
-p, ol, ul {
-	max-width: 40rem;
+p {
 	font-size: 0.9rem;
-  background-color: blue;
+  /*background-color: blue; */
+  margin: 0;
+  padding: 0;
+  
 }
 
 code {
@@ -160,34 +206,7 @@ input[type=submit]:active, input[type=reset]:active {
 } 
 
 
-/*
-HEADER NAVIGATION BAR ----------------------
-*/
 
-
-nav {
-  overflow: hidden;
-  text-weight: bold;
-}
-
-nav a {
-  font-size: 0.9rem;
-	text-decoration: none;
-  text-align: center;
-  float:right;
-  width: 10%;
-}
-
-nav h5 {
-  float:left;
-  font-size: 1rem;
-}
-
-nav a:hover, a:active, a:focus {
-	color: #EFB2AA;
-	transition-property: color; 
-	transition-duration: 0.5s;
-}
 
 /*
 HEADER NAVIGATION BAR ----------------------
@@ -214,13 +233,12 @@ FOOTER ----------------------
 */
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 	text-align: center;
   width: 100%;
   padding: 2rem;
-  background-color: red;
+  padding-top: 5rem;
+  /* background-color: red; */
+  margin: 0;
 }
 
 footer h5 {
@@ -240,31 +258,18 @@ footer a:hover {
 }
 
 
-/* 
   MEDIA QUERIES -------------------
 
 
 @media (min-width: 23.5em) {
-
-	nav .grid-col-1of5 {
-		flex-basis: 50%;
-	}
 
 }
 
 
 @media (min-width: 45em) {
 
-	nav .grid-col-1of5 {
-		flex-basis: 50%;
-	}
-
 }
 
 @media (min-width: 50.25em) {
-
-	nav .grid-col-1of5 {
-		flex-basis: 20%;
-	}
 
 }
