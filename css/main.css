@@ -1,5 +1,5 @@
 /*
-  STYLE GUIDE STYLING 
+  PAGE STYLING--------------------------
 */
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -8,22 +8,14 @@
 .grid {
 	display: flex;
 	flex-wrap: wrap;
+  width: 100%;
+	height: 100%;
 }
 
-body {
-  font-family: 'Helvetica', sans-serif;
-  padding: 2rem;
-}
-
-/*
-header {
-	background-color: blue;
-}
-*/
 
 #element_section {
-/*background-color: yellow;*/
-margin: 5rem;
+  background-color: yellow;
+  margin: 5rem;
 }
 
 .element {
@@ -32,15 +24,27 @@ margin: 5rem;
 
 .grid-blocks {
   padding: 2rem;
-  /*background-color: blue;*/
+  background-color: blue;
   width: 50%;
+}
+
+.block {
+  width: 50%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
+  width:100%;
 }
+
+/*
+  PAGE ELEMENTS--------------------------
+*/
 
 img {
 	height: auto; 
@@ -54,48 +58,62 @@ img:hover {
 }
 
 a {
-	color: #E87966;
+  font-size: 0.7rem;
+  text-weight: bolder;
+	color: black;
 	text-decoration: none;
-	transition-property: color; 
-	transition-duration: 0.5s;
 }
 
 a:hover, a:focus {
-	color: #F2C6A7;
+	color: #EFB2AA;
 	text-decoration: none;
+  transition-property: color; 
+	transition-duration: 0.5s;
 }
-
 
 /* 
   TEXT ELEMENTS -------------------
 */
 
+body {
+  font-family: 'Helvetica', sans-serif;
+  padding: 2rem;
+}
 
 h1 {
-  padding: 4rem;
+  padding: 2rem;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 3rem;
-  /*background-color: blue;*/
+  font-size: 2rem;
+  margin: 0;
+  background-color: #353842;
 }
 
 h2 {
   padding: 2rem;
   text-align: center;
   font-size: 1.75rem;
-  text-transform: uppercase;
-  /*background-color: red;*/
+  background-color: red;
+  margin: 0;
 }
 
 h3 {
   font-style: italic;
   font-size: 1.25rem;
-  /*background-color: red;*/
+  background-color: red;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin:0;
 }
 
 p, ol, ul {
 	max-width: 40rem;
 	font-size: 0.9rem;
+  background-color: blue;
 }
 
 code {
@@ -103,7 +121,6 @@ code {
   display: inline;
   background-color: rgb(120, 120, 120);
 }
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -144,38 +161,37 @@ input[type=submit]:active, input[type=reset]:active {
 
 
 /*
-BRAND COMPONENTS ----------------------
+HEADER NAVIGATION BAR ----------------------
 */
 
 
-/*
-.nav-bar {
-	width: 100%;
-	background-color: black;
+nav {
+  overflow: hidden;
+  text-weight: bold;
 }
-*/
 
 nav a {
-  font-size: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 0.9rem;
+	text-decoration: none;
   text-align: center;
-  color: black;
   float:right;
-  padding: 0.75rem;
-  width: 15%;
+  width: 10%;
+}
+
+nav h5 {
+  float:left;
+  font-size: 1rem;
 }
 
 nav a:hover, a:active, a:focus {
-	color: #E87966;
+	color: #EFB2AA;
 	transition-property: color; 
 	transition-duration: 0.5s;
 }
 
-.grid {
-	width: 100%;
-	height: 100%;
-}
+/*
+HEADER NAVIGATION BAR ----------------------
+*/
 
 .arial {
 	font-family: Arial;
@@ -193,18 +209,33 @@ nav a:hover, a:active, a:focus {
 	font-family: Tahoma;
 }
 
-/* Footer */
+/*
+FOOTER ----------------------
+*/
+
 footer {
-	 text-align: center;
-	 font-size: 0.7rem;  
-	 font-weight: bold;
-	 color: black;
-	 padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+	text-align: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: red;
 }
 
+footer h5 {
+  font-size: 0.7rem;  
+  font-weight: bold;
+}
+
+footer a {
+  color: #7F0015;
+  font-size: 0.7rem;  
+  font-weight: bold;
+}
 
 footer a:hover {
-	 color: rgb(207, 131, 42);
+	 color:#EFB2AA;
 	 transition: 0.5s;
 }
 
