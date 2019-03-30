@@ -16,6 +16,7 @@ nav {
 .left-nav a {
   float: left;
   font-size: 1rem;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }
@@ -77,14 +78,12 @@ nav a:hover, a:active, a:focus {
   margin: 0 auto;
   text-align: center;
   flex-direction: row;
-  background-color: yellow;
 }
 
 .center-block {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 2rem;
-  background
 }
 
 /*
@@ -159,7 +158,7 @@ h5 {
   
 }
 
-p {
+p, ul, li {
   font-family: 'Muli', sans-serif;
   font-size: 0.8rem;
   line-height: 1.5;
@@ -170,29 +169,12 @@ p {
 }
 
 code {
+  font-family: 'Merriweather', sans-serif;
   padding: 0.5rem;
-  display: inline;
-  background-color: rgb(120, 120, 120);
+  font-size: 0.7rem;
+  background-color: #EFB2AA;
 }
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-
-/* Styling for the input buttons */ 
-input[type=submit], input[type=reset] { /* information acquired from Google and https://learn.shayhowe.com/html-css/building-forms/ */
-  margin-top: 0.5rem;
-  padding:0.5rem;
-  background-color: #353842;
-  color: white;
-  border-style: none;
-  
-}
-
-input[type=submit]:active, input[type=reset]:active {
-  background-color: #24262D;
-}
 
 /* Styling for the navigation button */ 
 .button-nav {
@@ -262,6 +244,23 @@ footer a {
 footer a:hover {
 	 color:#EFB2AA;
 	 transition: 0.5s;
+}
+
+/*
+JAVASCRIPT-----------------------
+*/
+
+.fade-in {
+	animation: fadein 2s;
+}
+
+@keyframes fadein {
+    0% { 
+	opacity: 0; 
+	}
+    100% { 
+	opacity: 1; 
+	}
 }
 
  /*
