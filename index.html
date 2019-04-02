@@ -25,68 +25,72 @@
  <h1>P03 - portfolio style guide</h1>
  <div class="fade-in">	
   <div class="container">
-  
-      <h2>Interactive Elements</h2>
 
-	  <div class="center-block">
+	  <h2>Interactive Elements</h2>
 
+	  <div class="half-block">
 		<h4>In-text Link</h4>
 			<h5>CSS selector:</h5>
 			<p>a</p>
 
 			<h5>Sample code:</h5>
-			<code>&lt;a href="#link"&lt;This&lt;/a&gt; is what an in-text link will look like.&lt;/a&gt;</code>
+			<code>&lt;a href="#link"&gt;This&lt;/a&gt; is what an in-text link will look like.&lt;/a&gt;</code>
 
 			<h5>Rendered element:</h5>
 			<p><a href="#link">This</a> is what an in-text link will look like.</p>
+	   </div>
 			
 		
-
+		<div class="half-block">
 		<h4>Main Navigation</h4> 
 			<h5>CSS selector:</h5>
 			<p>nav</p>
 
 			<h5>Sample code:</h5>
 			<code> 
-				&lt;nav&gt;
-					&lt;div class="left-nav"&gt;
-					&lt;a href = "work.html"&gt;jin lin li &lt;/a&gt;
-					&lt;/div&gt;
-					&lt;a href = "about.html"&gt;about &lt;/a&gt;
-					&lt;a href = "work.html"&gt;work &lt;/a&gt;
-				&lt;/nav&gt;
+			    &lt;nav&gt; <br><br>
+					&lt;div class="left-nav"&gt; <br><br>
+					&lt;a href = "work.html"&gt;jin lin li &lt;/a&gt; <br><br>
+					&lt;/div&gt; <br><br>
+					&lt;a href = "about.html"&gt;about &lt;/a&gt; <br><br>
+					&lt;a href = "work.html"&gt;work &lt;/a&gt; <br><br>
+				&lt;/nav&gt; <br><br>
 			</code>
 
 		 	<h5>Rendered element:</h5>
-			<nav>
-			<div class="left-nav">
-			<a href = "work.html">jin lin li</a>
+			<div class="style-guide-nav">
+				<nav>
+				<div class="left-nav">
+				<a href = "work.html">jin lin li</a>
+				</div>
+				<a href = "about.html">about</a>
+				<a href = "work.html">work</a>
+				</nav>
 			</div>
-			<a href = "about.html">about</a>
-			<a href = "work.html">work</a>
-			</nav>
-			</nav>
+		</div>
 
-	   </div>
 
-<!-- TEXT ELEMENTS SECTION  -->
-      <h2>Text Elements</h2>
+		<h2>Art Direction</h2>
 
-	  <div class="center-block" style="width:100%">
+		<div class="half-block">
         <h4>Headings</h4> 
 			<h5>CSS selector:</h5>
 			<p>h[#]</p>
 
 			<h5>Sample code:</h5>
-			<code> &lt;h4&gt;Heading 1&lt;/h4&gt; </code>
+			<code> &lt;h4&gt;Heading 4: Extra Heading 1&lt;/h4&gt; </code>
 
 			<h5>Rendered element:</h5>
-			<h4>Heading 1: Section heading</h4>
-			<h5>Heading 2: subsection heading</h5>
-			<h6>Heading 3: extra heading 1</h6>
+			<div class="style-guide-heading">
+				<p>Heading 1: Main Heading</p>
+			</div>
+			<h2>Heading 2: Section Heading</h2>
+			<h3>Heading 3: Image Description or Extra Heading</h3>
+			<h4>Heading 4: Extra Heading 1</h4>
+			<h5>Heading 5: Extra Heading 2</h5>
+		</div>
 
-
-
+		<div class="half-block">
         <h4>Paragraphs</h4> 
 			<h5>CSS selector:</h5>
 			<p>p</p>
@@ -97,11 +101,8 @@
 			<h5>Rendered element:</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet felis quis rhoncus congue. Suspendisse aliquet, odio ac feugiat tempus.</p>
 		</div>
-    
 
-      <h2>Art Direction</h2>
-
-	  <div class="center-block" style="width:100%">
+		<div class="half-block">
 		<h4>Font</h4>
 			<h5>CSS selector:</h5>
 			<p> p </p>
@@ -110,26 +111,19 @@
 			<code> &lt;p&gt; paragraph  &lt;/p&gt;</code>
 
 			<h5>Rendered element:</h5>
-			<div class="arial">
-				<p> Arial </p>
-			</div>
+			<p> Muli </p>
 
-			<div class="helvetica">
+			<div class="style-guide-font">
 			<p> Helvetica </p>
 			</div>
 
-			<div class="verdana">
-			<p> Verdana </p>
-			</div>
+		</div>
 
-			<div class="tahoma">
-			<p> Tahoma </p>
-			</div>
+		<div class="center-block">
+        <h4>Imagery</h4>
 
-
-        <h4>Color Palette</h4>
+			<h5>Color Palette </h5>
 			<img src="img/colorpalette.png" alt="color palette for my website">
-			<p> Color of link and button regular and hover states. </p>
 	
 			<h5>Imagery and Mood Board </h5>
 				<div class="grid-blocks">
@@ -157,10 +151,12 @@
 				</div>
 		</div>
 
-    <h2>Citations</h2>
 
-	<div class="center-block" style="width:90%">
-      <ul>
+	<div class="center-block" style="width:100%">
+	
+	<h2>Citations</h2>
+     
+	  <ul>
 		<li>Adams, Vernon. Principal Designer. 2011. <strong>Muli [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Muli">https://fonts.google.com/specimen/Muli</a></li>
         <li>Type, Sorkin. Principal Designer. 2010. <strong>Merriweather [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Merriweather">https://fonts.google.com/specimen/Merriweather</a></li>
 		<li>Ulanovsky, Julieta. Principal Designer. 2014. <strong>Montserrat [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Montserrat">https://fonts.google.com/specimen/Montserrat</a></li>
@@ -171,7 +167,7 @@
  </div>
 
   <footer>
-    <h5>jin lin li portfolio</h5>
+    <a href = "work.html">jin lin li portfolio</a><br>
     <a href = "index.html">style guide</a><br>
     <a href = "citations.html">citations</a><br>
     <a href = "https://github.com/jinlinl/P3">github page</a>
