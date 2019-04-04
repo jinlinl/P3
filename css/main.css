@@ -75,12 +75,14 @@ nav a {
   margin: 0 auto;
   text-align: center;
   flex-direction: row;
+  background-color: green;
 }
 
 .center-block {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 4rem;
+  background-color: yellow;
 }
 
 .full-block {
@@ -284,9 +286,14 @@ MEDIA QUERIES -------------------
     margin-bottom: 8rem;
   }
 
+  .center-block {
+    margin-left: 0;
+  }
+
   ul {
     list-style: none;
     padding-left: 0;
+    font-size: 0.7rem;
   }
 
   h1 {
@@ -297,6 +304,10 @@ MEDIA QUERIES -------------------
     padding-top: 2rem;
     padding-bottom: 2.5rem;
   }
+
+   h3 {
+    font-size: 0.7rem;
+  }
 }
 
 /*
@@ -304,3 +315,4 @@ MEDIA QUERIES -------------------
 }
 @media screen and (max-width: 768px) {
 }
+*/
