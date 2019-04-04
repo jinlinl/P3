@@ -10,7 +10,6 @@ header {
 
 nav {
   overflow: hidden;
-  text-weight: bold;
 }
 
 .left-nav a {
@@ -52,7 +51,6 @@ nav a {
   width: 45%;
   margin: 0 auto;
   padding-bottom: 1rem;
-  
 }
 
 .grid-blocks img:hover {
@@ -63,12 +61,11 @@ nav a {
 
 .half-block {
   display: inline-block;
-  width: 48%;
+  width: 47%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 4rem;
   text-align: left;
-
 }
 
 .container {
@@ -162,7 +159,6 @@ h5 {
   font-size: 0.8rem;
   font-weight: 500;
   text-align: left;
-
 }
 
 p {
@@ -208,6 +204,11 @@ code {
   font-size: 0.6rem;
 }
 
+#left-align {
+  float: left;
+  margin: 0.5rem;
+}
+
 /*
 FOOTER ----------------------
 */
@@ -247,7 +248,128 @@ JAVASCRIPT-----------------------
 MEDIA QUERIES -------------------
 */
 
+@media screen and (max-width: 992px) {
+
+  header {
+    padding: 2rem;
+  }
+
+  .left-nav a {
+	  font-size: 0.8rem;
+    width: 20%;
+	}
+
+	nav a {
+	  font-size: 0.8rem;
+    width: 20%;
+	}
+
+	.container {
+	  width: 80%;
+	  flex-direction: column;
+	}
+
+  .half-block {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+	.grid-blocks {
+	  width: 100%;
+	}
+
+  .center-block {
+    margin-bottom: 2rem;
+  }
+
+  .full-block {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  h1 {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 0.65rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  p {
+    max-width: 40rem;
+    font-size: 0.75rem;
+  }
+  
+
+  /*
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: green;
+  }
+
+	nav a {
+	  font-size: 0.9rem;
+	  text-decoration: none;
+	  text-align: right;
+	  float:right;
+	  width: 20%;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	 .container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  width: 80%;
+	  margin: 0 auto;
+	  text-align: center;
+	  flex-direction: column;
+	}
+
+	.grid-blocks {
+	  display: inline-block;
+	  width: 100%;
+	  margin: 0 auto;
+	  padding-bottom: 1rem;
+	}
+
+	.block {
+	  display: inline-block;
+	  width: 100%;
+	  margin: 0 auto;
+	  text-align: left;
+	  padding-bottom: 1rem;
+	}
+}
+/*
 @media screen and (max-width: 768px) {
+
+  body {
+    background-color: green;
+  }
 
 	nav a {
 	  font-size: 0.9rem;
